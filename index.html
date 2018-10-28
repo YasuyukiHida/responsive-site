@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">                                                                                                          <!--日本語で-->
+
+  <head>
+    <meta charset="utf-8">                                                                                                <!--チャートセット-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">                                                   <!--viewport:表示領域の横幅をデバイスと同じ横幅にして、表示倍率を1倍にするという意味-->
+    <title>新規レスポンシブWebデザインのコーディング</title>                                                              <!--title:ページタイトル-->
+    <meta name="description" content="Webデザイナーを目指しているひよっこのサイトです。山口県を中心に活動しています。">   <!--ページの概要を表すテキスト情報.検索エンジンに有効な場合もある-->
+    <meta name="keywords" content="Web, デザイン, デザイナー, ポートフォリオ, Web制作">                                   <!--metaキーワード.検索エンジンに有効な場合もある-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">                       <!--reset.css（リセット用CSS）ブラウザーごとで異なる不具合をリセット-->
+    <link rel="stylesheet" href="./css/style.css">                                                                        <!--style.css（オリジナルデザイン用CSS）-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">            <!--font-awesome.min.css（アイコンフォント利用のためのCSS）-->
+  </head>
+
+  <body>
+
+    <header>                                                                                                              <!--？それぞれをDIVで囲むのが普通なのか？-->
+      <div id="header">                                                                                                   <!--idは個人名、ページに1回しか登場しない！-->
+<!--        <img src="images/kame.jpg" alt="カメ" title="カメと海">                                                       <!--altは画像の説明。titleはタイトル-->
+      </div>
+    </header>
+
+    <main>                                                                                                                <!--mainのタグの中に-->
+     <h2>海がめの生態</h2>
+     <div class="container">                                                                                              <!--h2のタイトルがあって-->
+      <div class="oya">                                                                                                   <!--親のDIVで括って-->
+          <div class="ko">                                                                                                <!--その中に子のdivがある-->
+              <h3>Web</h3><i aria-hidden="true" class="skill-icon fa fa-laptop"></i>                                                                                                <!--子のdivの中に-->
+              <p>HTML/CSSでのコーディングがまぁまぁできます。JavaScript、PHP、WordPressも現在勉強中です。</p>             <!--h3のタイトルがある-->
+          </div>
+          <div class="ko">
+              <h3>Illust</h3><i aria-hidden="true" class="skill-icon fa fa-pencil"></i>
+              <p>キャラクターデザインなどのイラスト制作も手がけたいと思っています。現在はまだ勉強中です。</p>
+          </div>
+          <div class="ko">
+              <h3>English</h3><i aria-hidden="true" class="skill-icon fa fa-commenting-o"></i>
+              <p>ずっと医療業界で専門技術職を行っていました。将来医療にこのスキルを役立てたいと思っています。</p>
+          </div>
+      </div>
+    </div>
+    </main>
+
+    <footer>
+     <h2>もっと詳しく</h2>
+      <P>こちら</P>
+    </footer>
+
+  </body>
+
+</html>

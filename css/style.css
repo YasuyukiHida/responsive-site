@@ -1,0 +1,107 @@
+@charset "UTF-8";                                                               /* チャートセット */
+@import 'https://fonts.googleapis.com/css?family=Abel';                         /* Google Fonts用のCSSを読み込み */
+
+/* --------------------------------body-------------------------------- */
+body {
+    font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    font-size: 1.4rem;								/* 【注】ブラウザのデフォルトサイズは100% = 1em = 1rem = 16px = 12pt */
+    line-height: 1.6;
+    letter-spacing: .1em;
+    color: #4c4c4c;
+    background-color: #fdfcf6;
+}
+
+h2 {
+   font-size: 150%;
+}
+
+ /* -------------------------------header---------------------------- */
+header {
+  text-align:center;                                                            /* 画像もtext-alignでセンタリングする */
+  background-color: #ff99ff;                                                    /* 背景色赤 */
+}
+
+#header {
+  background-image: url("../images/kame.jpg");                                  /* id"header"というdivの中の背景にkame.jpgを指定する。 */
+  height: 500px;                                                                /* id"header"というdivの中のimgに対して100％の幅を持たせる。 */
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+#header img {
+  width: 100%;                                                                  /* id"header"というdivの中のimgに対して100％の幅を持たせる。 */
+  height: 500px;                                                                /* id"header"というdivの中のimgに対して500pxの高さを持たせる。 */
+}
+
+ /* ----------------------------mein-------------------------------- */
+main {
+  text-align:center;                                                            /* 画像もtext-alignでセンタリングする */
+}
+main div {
+    width: auto;                                                                /* width:100%とwidth:autoの違い　→　http://bashalog.c-brains.jp/15/03/11-205639.php */
+    background-color: red;                                                      /* 背景色 */
+    text-align: center;
+}
+
+main div.oya {                                                                  /* 【注】divと.oyaの間にはスペースを入れない！！*/
+    display: flex;                                                              /* 『親』要素に定義するだけで、その直下の『子』要素が並列になる便利なコマンド */
+    width: 90%;                                                                 /* 全体の90％に調整して調整する。 */
+    margin: 0px auto;                                                           /* marginはパーツの「外側」。縦は0px横をautoで調整する。*/
+    background-color: #dddddd;                                                  /* 背景色 */
+}
+
+main div.ko {
+    width: 25%;                                                                 /* 『子』要素に対する幅の設定『親』100%に対して『子』の割合 */
+    margin: 0px auto;                                                          /* marginはパーツの「外側」この場合縦10px、横はauto */
+    padding: 20px;                                                              /* paddingはパーツの「内側」増やすほど有効で『子』のdivが大きくなる。 */
+    background-color: #bea300;                                                  /* 背景色 */
+    text-align: center;                                                         /* 中央寄せ */
+}
+main div.ko i {
+    font-size: 4.5rem;
+}
+main div.ko h3 {
+    color: #FFFFFF;
+}
+main div p {
+  color: #FFFFFF;
+  margin: 10px;
+  text-align:left;
+  font-size: 70%;
+}
+
+ /* ----------------------------footer---------------------------- */
+footer {
+  text-align: center;                                                           /* 画像もtext-alignでセンタリングする */
+  background-color: #14c0c9;
+  padding:10px;									/* 背景色緑 */
+}
+
+footer p {
+  width: 300px;                                                                 /* 幅300px */
+  margin: 0px auto;                                                             /* 上下余白無・左右自動 */
+  border: 1px solid #333333;                                                    /* 枠線 */
+  border-radius: 50px;                                                          /* 角を丸める */
+  height: 36px;                                                                 /* 高さ */
+  background-color: #dcdcdc;                                                    /* 背景色*/
+  line-height: 36px;                                                            /* この行で上下の中心を指定している */
+  text-align: center;                                                           /* 中央寄せ */
+}
+
+ /* ----------------------------media query---------------------------- */
+@media (max-width:768px) {
+  #header {
+    height:250px;
+  }
+  main div.oya {
+    display: block;
+  }
+  main div.ko{
+    width: 75%;
+  }
+
+
+
+ /* ----------------------------question---------------------------- */
+ /* ・なんでPC表示で上下が切れるの？ */
+ /* ・スマホサイズにすると上下の余白が無くなるのはなぜ？ */
